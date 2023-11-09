@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #053a3a;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .logo {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        h1 {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        .details {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .left-section {
+            text-align: left;
+        }
+
+        .right-section {
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        .right-section label, .right-section select {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .feedback {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .user-feedback {
+            margin: 10px 0;
+        }
+
+        .social-media-icons {
+            text-align: right;
+        }
+        .search-box {
+            text-align: center;
+        }
+
+        .search-box form {
+            display: inline-block;
+        }
+
+        .search-box input[type="text"] {
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid #053a3a;
+            width: 300px; /* Adjust the width as needed */
+        }
+
+        .search-box button {
+            background-color: #053a3a;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo">
+            <title>Item Details</title>
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Who we are</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">New in</a></li>
+                <li><a href="#">Blog</a></li>
+                <a class="right-align" href="#"><i class="fas fa-shopping-cart"></i></a>
+                <li class="right-align"><a href="#">My Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="search-box">
+            <form action="search-results.html" method="GET">
+                <input type="text" name="search" placeholder="Search...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <h1>Item Details</h1>
+
+        <div class="details">
+            <div class="right-section">
+                <img src="kids.jpg" alt="Formal" width="400" height="600">
+                
+                <button>Add to Cart</button>
+            </div>
+            <div class="right-section">
+                <label for="color">Color:</label>
+                <select id="color">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <label>Price: $49.99</label>
+            </div>
+        </div>
+        <div class="feedback main">
+            <h2>Previous Feedback</h2>
+            <div class="user-feedback">
+                <p>Feedback from User123:</p>
+                <p>Great product! I love it.</p>
+            </div>
+            <div class="user-feedback">
+                <p>Feedback from User456:</p>
+                <p>Quality is excellent. Highly recommended.</p>
+            </div>
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" placeholder="Write your feedback here..."></textarea>
+            <button>Submit Feedback</button>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Location</a></li>
+            </ul>
+        </nav>
+        <div class="social-media-icons right-align">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2023 DesiWear - All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<html lang="en">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            background-color: #053a3a;
+            padding: 10px 0;
+        }
+
+        .header-container img {
+            margin: auto;
+            display: block;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        header {
+            background-color: #053a3a;
+        }
+
+        header h1 {
+            color: #ffffff;
+        }
+
+        footer {
+            background-color: #053a3a;
+            color: #ffffff;
+        }
+
+        main {
+            background-color: #ffffff;
+        }
+        .search-box {
+            text-align: center;
+        }
+
+        .search-box form {
+            display: inline-block;
+        }
+
+        .search-box input[type="text"] {
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid #053a3a;
+            width: 300px; /* Adjust the width as needed */
+        }
+
+        .search-box button {
+            background-color: #053a3a;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+        }
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <img src="logo.jpg" alt="Logo" width="50px" height="50px" class="center">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Who we are</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">New in</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <a class="right-align" href="#"><i class="fas fa-shopping-cart"></i></a>
+                    <li class="right-align"><a href="#">My Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="search-box">
+                <form action="search-results.html" method="GET">
+                    <input type="text" name="search" placeholder="Search...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <label>Traditional Customs Categories</label>
+            <ul>
+                <li>
+                    <img src="wedding.jpg" alt="Wedding" width="80" height="90">
+                    <a href="#">Wedding</a>
+                </li>
+                <li>
+                    <img src="party.jpg" alt="Party" width="80" height="90">
+                    <a href="#">Party</a>
+                </li>
+                <li>
+                    <img src="formal.jpg" alt="Formal" width="80" height="90">
+                    <a href="#">Formal</a>
+                </li>
+                <li>
+                    <img src="men.jpg" alt="Men" width="80" height="90">
+                    <a href="#">Men</a>
+                </li>
+                <li>
+                    <img src="kids.jpg" alt="Kids" width="80" height="90">
+                    <a href="#">Kids</a>
+                </li>
+            </ul>
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Location</a></li>
+                </ul>
+            </nav>
+            <div class="social-media-icons right-align">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2023 DesiWear - All rights reserved.</p>
+        </footer>
+    </body>
+</html>
